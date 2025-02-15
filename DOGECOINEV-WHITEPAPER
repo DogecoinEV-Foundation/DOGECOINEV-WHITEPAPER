@@ -1,6 +1,6 @@
 # DogecoinEV (DEV)
 
-A high-speed, meme-friendly, **Layer 1 blockchain** optimized for big blocks, fren-to-fren transactions, and merge mining. Inspired by the best parts of **Dogecoin** and **Pepecoin**, DogecoinEV aims to bring fun, simplicity, and scalability back to crypto.
+A high-speed, meme-friendly, **Layer 1 blockchain** optimized for big blocks, fren-to-fren transactions, and merge mining. Inspired by the best parts of **Dogecoin** and **Pepecoin**, DogecoinEV aims to bring fun, simplicity, and scalability back to crypto—fully in line with **Elon’s Vision** for a future where crypto is fast, inclusive, and unstoppable.
 
 ## Abstract
 
@@ -10,11 +10,13 @@ DogecoinEV (DEV) is not just another fork—it’s an evolution, a movement, a v
 
 ## Introduction
 
-Think of DogecoinEV as **Dogecoin, but optimized for scale and speed.** We took what works, supercharged it, and now **DEV** is ready to send transactions at hyperspeed.
+Think of DogecoinEV as **Dogecoin, but optimized for scale and speed.** We took what works, supercharged it, and now **DEV** is ready to send transactions at hyperspeed, fully aligning with Elon’s dream of a high-throughput meme-friendly chain.
 
-### What Makes DEV Special?
+### Quick Highlights
 - **Bigger Blocks, More Data, More Fun** – 10MB blocks allow for more transactions, more memes, and more possibilities.
-- **Fren-to-Fren Transactions** – A currency made for sharing, tipping, and having a good time.
+- **Prefix D** – Addresses start with **D**, preserving that iconic Dogecoin flair.
+- **BIP Activation at Block 1k** – We’ve integrated BIP features early, ensuring our chain can evolve.
+- **Fren-to-Fren (DEVS) Transactions** – A currency made for sharing, tipping, and having a good time.
 - **Merge Mining** – Earn while mining Dogecoin and Litecoin at the same time, boosting security and efficiency.
 - **One-Minute Block Times** – Because no one likes waiting. Instant feels, instant confirmations.
 - **Scrypt Proof-of-Work** – Keeping mining decentralized, just how we like it.
@@ -48,6 +50,9 @@ Activated at **block 30,000**, DEV allows you to mine DogecoinEV **alongside Dog
 ### Chain ID
 - **DogecoinEV Chain ID:** `63`
 
+### BIP Features Activated at Block 1000
+To ensure the chain remains agile and upgradable, major Bitcoin Improvement Proposals (BIPs) were integrated and activated at **block 1,000**, allowing for timely innovations and future expansions.
+
 ---
 
 ## Tokenomics – Keeping It Fair
@@ -76,6 +81,40 @@ DogecoinEV keeps **the proven inflationary model of Dogecoin**, ensuring **conti
 - **Merge Mining Activated at Block 30,000** – Because security matters.
 - **Optimized for Fast Transactions** – Nobody likes waiting. **One-minute blocks keep things moving.**
 - **Custom GUI** – A slick, user-friendly experience designed for everyone, from crypto OGs to total normies.
+- **Prefix D** – Addresses start with `D`, paying homage to the original Dogecoin vibe.
+- **BIP Activation at Block 1k** – Future-proofing the chain for expansions and improvements.
+
+---
+
+## Under the Hood: ChainParams
+
+Below is a snippet from our `chainparams.cpp` illustrating how our network parameters are set:
+
+```cpp
+// Simplified excerpt from chainparams.cpp:
+
+class CMainParams : public CChainParams {
+public:
+    CMainParams() {
+        strNetworkID = "main";
+        // BIP is activated at block 1000
+        consensus.BIP65Height = 1000;
+        consensus.BIP66Height = 1000;
+        // Blocks up to 99,999 have 500k rewards, next block ranges halve accordingly
+        consensus.nSubsidyHalvingInterval = 100000;
+        // Scrypt PoW with 1-minute block times
+        consensus.nPowTargetTimespan = 60;
+        consensus.nPowTargetSpacing = 60;
+        // Chain ID 63
+        consensus.nAuxpowChainId = 0x63;
+        // PubKey address prefix is 30 (which is 'D')
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
+        // Additional chain parameters...
+    }
+};
+```
+
+For a full view, check out our [GitHub repo](https://github.com/DogecoinEV-Foundation/DogecoinEV) where you can see the entire file.
 
 ---
 
@@ -132,7 +171,7 @@ This project is open-source under the [MIT License](LICENSE). Feel free to fork,
 
 ## Final Note
 
-🚀 **DEV: More Transactions. More Fun. More DEV Energy.** 🚀
+🚀 **DEV: More Transactions. More Fun. More DEV Energy—All Aligned with Elon’s Vision.** 🚀
 
 Take part in the revolution today—where memes meet real utility. DogecoinEV is bridging the gap between unstoppable fun and unstoppable tech. Now it’s your turn to add to the hype. Happy mining and happy sending!
 
