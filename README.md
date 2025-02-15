@@ -14,7 +14,7 @@ Think of DogecoinEV as **Dogecoin, but optimized for scale and speed.** We took 
 
 ### What Makes DEV Special?
 - **Bigger Blocks, More Data, More Fun** – 10MB blocks allow for more transactions, more memes, and more possibilities.
-- **Fren-to-Fren (Now DEVS) Transactions** – A currency made for sharing, tipping, and having a good time.
+- **Fren-to-Fren Transactions** – A currency made for sharing, tipping, and having a good time.
 - **Merge Mining** – Earn while mining Dogecoin and Litecoin at the same time, boosting security and efficiency.
 - **One-Minute Block Times** – Because no one likes waiting. Instant feels, instant confirmations.
 - **Scrypt Proof-of-Work** – Keeping mining decentralized, just how we like it.
