@@ -1,4 +1,5 @@
-DogecoinEV (DEV) White Paper
+DogecoinEV (DEV) White Paper DogecoinEV (DEV) White Paper 1.1  3/27/2025
+
 
 Welcome to DogecoinEV (DEV) - a high-speed, meme-friendly Layer 1 blockchain optimized for big blocks, fren-to-fren transactions, and merge mining. Inspired by the best parts of Dogecoin and Pepecoin, DogecoinEV aims to bring fun, simplicity, and scalability back to crypto—fully in line with a vision for a future where crypto is fast, inclusive, and unstoppable.
 
