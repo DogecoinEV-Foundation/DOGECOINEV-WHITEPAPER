@@ -1,141 +1,134 @@
-DogecoinEV (DEV) White Paper 1.2
-**Published: 4/8/2025**
+DogecoinEV (DEV) White Paper  
+Version 1.2 – Published: 4/8/2025  
+Launch Date: January 26, 2025  
 
----
+======================================================
+Welcome to DogecoinEV (DEV)
+======================================================
 
-## Welcome to DogecoinEV (DEV)
+DogecoinEV (DEV) is a high-speed, meme-empowered Layer 1 blockchain designed for a world that demands more throughput, more fun, and more freedom. Built from the best of Dogecoin and Pepecoin, and deeply inspired by Elon Musk’s vision for high-throughput decentralized infrastructure, DEV is where memes meet real scalability.
 
-DogecoinEV (DEV) is a high-speed, meme-empowered Layer 1 blockchain designed for a world that needs *more throughput, more fun, and more freedom*. Inspired by the most iconic meme coins—**Dogecoin** and **Pepecoin**—and infused with the forward-thinking vision of Elon Musk for high-throughput, decentralized financial infrastructure, DEV is what happens when speed meets community and scale meets simplicity.
+It’s fast. It’s fun. It’s built to handle thousands of transactions per minute. And it’s completely community-driven.
 
----
+======================================================
+Abstract
+======================================================
 
-## Abstract
+DogecoinEV isn’t just another chain—it’s a movement. A high-throughput, meme-friendly, merge-mineable evolution of Dogecoin designed to bring back what made crypto great: speed, inclusion, and energy.
 
-DogecoinEV (DEV) is not a mere fork—it’s a leap forward. DEV embodies the ethos of open-source community-driven development, optimized for modern needs and internet culture. Through *big blocks*, *merge mining*, and a playful yet powerful design, DEV brings you a chain that’s capable of handling real-world demand, meme-level virality, and a permissionless future.
+By increasing block size, enabling merge mining, and implementing core BIPs early, DEV delivers a simple, scalable blockchain that’s ready for creators, frens, and full-blown memecoin degenerates alike.
 
-Rooted in the original Dogecoin spirit but elevated with the throughput potential of visionary thinking—yes, we're talking Elon's dream of a super-efficient, frictionless crypto rail—DEV is built for everyone. Whether you're a miner, a creator, or just a fren with a wallet, DEV welcomes you.
+Inspired by Elon Musk’s desire for an internet-native money with extremely low latency and infinite scale, DogecoinEV is built to serve as a fast, fair, and fun Layer 1 for the future.
 
----
+======================================================
+Introduction
+======================================================
 
-## Introduction
+DogecoinEV launched with its genesis block on January 26th, 2025—timestamped “Nintondo” and built to scale from day one.
 
-DogecoinEV is what Dogecoin could be if reimagined for the next era of crypto. It takes the accessibility and culture that made Dogecoin a household name and upgrades it with speed, efficiency, and scale.
+It’s Dogecoin with rocket fuel. Think faster confirmations, bigger blocks, and merge mining with Dogecoin and Litecoin. All of it wrapped in a meme-ready design, made to power everyday tipping, gaming, NFTs, and peer-to-peer transactions.
 
-With one-minute blocks, 10MB max block size, and the power of **merge mining**, DEV is engineered to thrive in a high-throughput environment. Transactions move fast. The network stays light. And fees? Practically non-existent.
+This is the chain for frens. This is the chain for throughput.
 
-Launched with a genesis block timestamped “**Nintondo**” on December 6, 2013 (Unix 1386325540), DEV blends nostalgic roots with forward momentum. And with every block, it gets closer to realizing Elon’s vision: **a world where decentralized currency is instant, global, and unstoppable**.
+======================================================
+Highlights
+======================================================
 
----
+- 10MB max block size (5MB base)
+- 1-minute block time
+- Merge mining enabled at block 30,000 (Chain ID 0x50)
+- Prefix “D” for addresses, “J” for script
+- Scrypt Proof-of-Work (N=1024, r=1, p=1)
+- Instant transactions, minimal fees
+- Early BIP activation (BIP34, BIP65, BIP66)
+- Low-fee design: 1 DEV/kB
+- Full Qt-based core wallet
+- Fren-to-fren currency: DEVS
+- Fun-first culture, serious scalability
 
-## Key Highlights
+======================================================
+Core Technology
+======================================================
 
-- **High Throughput Design**: With 10MB serialized blocks and optimized Scrypt PoW, DEV can handle thousands of transactions per minute—making it ready for mainstream adoption, gaming, tipping, NFTs, and more.
-- **Merge Mining**: Seamlessly earn DEV alongside Dogecoin and Litecoin—no extra electricity or hassle required.
-- **Fren-to-Fren (DEVS) Transactions**: Send value to your frens in under a minute with DEVS—the native, fun-loving coin of the DogecoinEV ecosystem.
-- **Elon-Inspired Infrastructure**: Speed, simplicity, and throughput—all core to Elon’s vision for blockchain tech.
-- **Minimal Fees, Maximum Fun**: With base fees set at 1 DEV/kB and ample space in each block, congestion becomes a thing of the past.
-- **Meme-Friendly but Real**: From NFTs to actual commerce, DEV is as practical as it is playful.
+>> Layer 1 Blockchain  
+DogecoinEV is not a token. It’s a self-contained blockchain with its own consensus, supply, and network.
 
----
+>> Merge Mining  
+DEV supports AuxPoW, so miners can earn DOGE, LTC, and DEV at the same time—maximizing efficiency and securing the chain.
 
-## Core Features
+>> Elon’s Throughput Dream  
+DogecoinEV aligns with Elon Musk’s vision: high-volume, internet-native money that works at scale. Every protocol decision prioritizes speed and simplicity.
 
-### 🔗 Layer 1 Blockchain
+>> 10MB Blocks  
+More data. More memes. More possibilities. 10MB serialized blocks = thousands of transactions per block. 160,000 sigops for on-chain logic.
 
-DogecoinEV isn’t a token. It’s a fully-fledged blockchain built from the ground up with performance in mind. The foundation is solid, allowing developers to build real utility while maintaining a vibrant, expressive culture.
+>> Scrypt PoW  
+Simple, secure, and fair. If you can mine Dogecoin, you can mine DEV. Difficulty adjusts every block for stability (nPowTargetTimespan = 60).
 
-### 💥 Scrypt Proof-of-Work
+======================================================
+Chain Parameters
+======================================================
 
-DEV utilizes **Scrypt PoW** (N=1024, r=1, p=1)—a time-tested algorithm shared by Dogecoin and Litecoin. This choice ensures fair mining and wide accessibility across existing hardware. With difficulty adjusting every block (`nPowTargetTimespan = 60`), DEV remains stable and adaptive to network conditions.
+Chain ID: 0x50 (80)  
+Address Prefix: D (pubkey - 30), J (script - 22)  
+Block Time: 60 seconds  
+Block Size: 10MB (serialized), 5MB (base)  
+SigOps Limit: 160,000  
+Default Port: 42069  
+Genesis Block Time: 1386325540  
+Genesis Block Reward: 88 DEV  
+AuxPoW Activation: Block 30,000
 
-### 📦 10 MB Blocks – No Congestion Here
+======================================================
+BIP Activation
+======================================================
 
-Why 10MB blocks? Because the future demands throughput. Each block accommodates:
-- 10MB serialized size
-- 5MB base size
-- 160,000 sigops
+- Block 1,000:  
+  - BIP65 (CHECKLOCKTIMEVERIFY)  
+  - BIP66 (strict DER signatures)
 
-That’s more room for transactions, NFTs, app data, and even experimental features—all with lightning-fast confirmation times.
+- Block 1,034,383:  
+  - BIP34 (height in coinbase)
 
-### ⚒️ Merge Mining (AuxPoW)
+======================================================
+Tokenomics
+======================================================
 
-Enabled at block 30,000 (`nAuxpowStartHeight = 30000`), merge mining allows miners to **simultaneously secure DogecoinEV and other Scrypt-based chains**, like Dogecoin and Litecoin. With Chain ID `0x50`, DEV ties into the broader Scrypt ecosystem, enhancing both **security** and **profitability**.
+Rewards are inflationary and halve every 100,000 blocks (~69 days). Modeled after Dogecoin, but tuned for predictable, ongoing participation.
 
-### 🧠 Elon’s Vision: Built-In
+| Block Range     | Reward Per Block (DEV) |
+|-----------------|-------------------------|
+| 0–99,999        | 500,000 (first 1k random to 1M) |
+| 100,000–144,999 | 250,000                 |
+| 145,000–199,999 | 125,000                 |
+| 200,000–299,999 | 62,500                  |
+| 300,000–399,999 | 31,250                  |
+| 400,000–499,999 | 15,625                  |
+| 500,000+        | 10,000                  |
 
-We took inspiration from Elon Musk’s belief in a world where crypto just works—fast, scalable, and accessible to everyone. DogecoinEV was designed from the start to:
-- **Scale throughput** without layer 2 gimmicks.
-- **Minimize latency**, thanks to 1-minute block times.
-- **Maximize usability**, keeping UX normie-friendly.
-- **Embrace memes**, because the internet runs on culture.
+Annual long-term emission: ~5.26M DEV  
+Halving interval: 100,000 blocks (nSubsidyHalvingInterval)
 
-DEV is the meme-speed backbone for tomorrow’s Web.
+======================================================
+Use Cases
+======================================================
 
----
+- Instant Digital Payments  
+  Meme-speed transactions with <1min confirmations and near-zero fees.
 
-## Technical Specifications
+- Merge Mining Revenue  
+  Triple mine DOGE, LTC, and DEV with no extra cost.
 
-| Feature                     | Value                             |
-|----------------------------|-----------------------------------|
-| Algorithm                  | Scrypt (N=1024, r=1, p=1)         |
-| Block Time                 | 60 seconds                        |
-| Block Size (Serialized)    | 10MB                              |
-| Base Block Size            | 5MB                               |
-| Max SigOps                 | 160,000                           |
-| AuxPoW Start Height        | 30,000                            |
-| Chain ID                   | 0x50 (80)                         |
-| Prefix (PubKey Address)    | D (base58 prefix 30)              |
-| Prefix (Script Address)    | J (base58 prefix 22)              |
-| Default Port               | 42069                             |
-| Genesis Reward             | 88 DEV                            |
+- On-Chain Fun  
+  Tip creators, mint NFTs, power dApps, and build fren-centric games.
 
----
+- Inclusive Finance  
+  DEV isn’t about Wall Street. It’s for real people, using real coins, for real things.
 
-## BIP Activation Milestones
+======================================================
+Example ChainParams Snippet (C++)
+======================================================
 
-To keep the chain agile and forward-compatible, we’ve hardcoded early support for key Bitcoin Improvement Proposals:
-
-- **Block 1,000**:  
-  - BIP65: `CHECKLOCKTIMEVERIFY` – Time-based smart contract functionality  
-  - BIP66: Strict DER signature enforcement
-
-- **Block 1,034,383**:  
-  - BIP34: Includes block height in coinbase for greater transparency and upgradeability
-
----
-
-## Tokenomics: Built to Last
-
-### Inflationary, Predictable, and Fair
-
-Inspired by Dogecoin’s model, DEV’s reward structure is:
-- **Inflationary by design**, ensuring continuous mining incentives
-- **Halving every 100,000 blocks** (~69 days)
-- **Sustainable long-term** with ~5.25M DEV issued per year once stabilized
-
-| Block Range     | Reward Per Block (DEV)                            |
-|-----------------|--------------------------------------------------|
-| 0–99,999        | 500,000 (first 1k blocks random up to 1M)         |
-| 100,000–144,999 | 250,000                                          |
-| 145,000–199,999 | 125,000                                          |
-| 200,000–299,999 | 62,500                                           |
-| 300,000–399,999 | 31,250                                           |
-| 400,000–499,999 | 15,625                                           |
-| 500,000+        | 10,000                                           |
-
-This emission rate balances availability and value, rewarding active participants while keeping the currency accessible.
-
----
-
-## Developer-Friendly
-
-From meme games to full-stack dApps, DogecoinEV is easy to build on. With a Qt-based GUI wallet, consistent consensus rules, and active GitHub development, developers can jump in and start creating.
-
-DogecoinEV aims to be the **home of open-source builders** who want speed without compromise, low fees, and an expressive canvas to create.
-
-### `ChainParams` Sample
-
-```cpp
 class CMainParams : public CChainParams {
 public:
     CMainParams() {
@@ -159,48 +152,34 @@ public:
         consensus.hashGenesisBlock = uint256S("0x1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691");
     }
 };
-```
 
----
+======================================================
+Community & Contribution
+======================================================
 
-## Use Cases – More Than Just Memes
+DogecoinEV is proudly open-source, meme-powered, and people-first. It is not backed by VCs or corporations. Just frens.
 
-DogecoinEV’s high throughput and low fees open doors to a wide range of applications:
+- GitHub: https://github.com/DogecoinEV-Foundation/DogecoinEV  
+- Forum: https://bitcointalk.org/index.php?topic=5529709.0  
+- Website: https://dogecoinev.com  
+- Telegram: https://t.me/DogeElonVision  
+- X: https://x.com/dogecoinev_
 
-- **Instant Digital Payments**  
-  Fast, cheap, and meme-ready for tipping, micro-payments, and retail.
+Developers: Submit PRs, ideas, or full builds.  
+Miners: Help secure the chain and earn rewards.  
+Frens: Spread memes and send coins.
 
-- **Merge Mining**  
-  Enhance security for DEV while earning more by mining multiple chains at once.
+======================================================
+Final Note
+======================================================
 
-- **On-Chain Fun**  
-  Host NFTs, meme-based games, and social experiences directly on-chain with zero congestion.
+DogecoinEV is what crypto should be: fast, fair, and fun.  
+No gas wars. No tokenomics traps. Just pure, meme-driven power at scale.
 
-- **Utility for the Everyday User**  
-  From content creators to tippers and casual senders—DEV is as usable as it is lovable.
+With Elon’s high-throughput vision baked into every block, and a community that knows how to party, DEV is here to bring the chain back to the people.
 
----
+>> More Transactions.  
+>> More Memes.  
+>> More DEV Energy.
 
-## The Community: Meme-Driven, Code-Powered
-
-DogecoinEV is proudly community-powered. There’s no VC funding, no token sales—just frens building a better chain. If you're a developer, miner, artist, or meme lord, there’s a place for you here.
-
-### Contribute:
-
-- **GitHub**: [https://github.com/DogecoinEV-Foundation/DogecoinEV](https://github.com/DogecoinEV-Foundation/DogecoinEV)
-- **BitcoinTalk Thread**: [https://bitcointalk.org/index.php?topic=5529709.0](https://bitcointalk.org/index.php?topic=5529709.0)
-- **Telegram**: [https://t.me/DogeElonVision](https://t.me/DogeElonVision)
-- **X (Twitter)**: [https://x.com/dogecoinev_](https://x.com/dogecoinev_)
-- **Website**: [https://dogecoinev.com](https://dogecoinev.com)
-
----
-
-## Final Note
-
-DogecoinEV isn’t just tech—it’s culture. It’s community. It’s speed with purpose.
-
-Inspired by Elon’s vision for high-throughput decentralized tech, and powered by the people, DEV is what happens when blockchain meets good vibes and big dreams.
-
-> **More Transactions. More Fun. More DEV Energy.**
-
-Let’s build the future—together.
+Let’s build something legendary—together.
